@@ -18,7 +18,7 @@ const season = [
   }
 ];
 
-test("renders dog images from API", () => {
+test("renders episodes images from API", () => {
   const { queryAllByTestId, rerender } = render(<Episodes episodes={[]} />);
 
   expect(queryAllByTestId(/episode-card/i)).toHaveLength(0);
